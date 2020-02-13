@@ -19,7 +19,7 @@
                         <div class="card-body">
                                 <h6 class="card-subtitle mb-2 text-muted">En el siguiente formulario puede crear
                                         estudiantes</h6>
-                                <form action="javascript:void(0)">
+                                <form action="javascript:void(0)" onsubmit="crearEstudiante()">
                                         <div class="form-group">
                                                 <label for="id">Identificación</label>
                                                 <input class="form-control" type="text" placeholder="Ingrese su identificación"
@@ -54,6 +54,7 @@
                                                         <option value="003">Comunicación</option>
                                                 </select>
                                         </div>
+                                        <input class="btn btn-primary" type="submit" value="Crear estudiante">
                                 </form>
                         </div>
                 </div>
