@@ -54,11 +54,26 @@
                                                         <option value="003">Comunicación</option>
                                                 </select>
                                         </div>
-                                        <input class="btn btn-primary" type="submit" value="Crear estudiante">
+                                        <input id="btnCrearEstudiante" class="btn btn-primary" type="submit" value="Crear estudiante">
+                                        <button type="button" onclick="actualizarEstudiante()" id="btnEditarEstudiante"
+                                                class="btn btn-primary">Actualizar estudiante </button>
                                 </form>
                         </div>
                 </div>
         </div>
+        <table class="table">
+                <thead>
+                        <tr>
+                                <th scope="col">Identificacion</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Carrera</th>
+                        </tr>
+                </thead>
+                <tbody id="listaEstudiantes">
+
+                </tbody>
+        </table>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
                 crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
